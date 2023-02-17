@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Century Gothic', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+body{
+    background-color: #212529;
+}
+
+.dp img{
+    width: 160px;
+    height: 160px;
+    border: 7px solid #333941;
+    border-radius: 50%;
+}
+
+.nav{
+    background-color: #111418;
+    position: fixed;
+    width: 15rem;
+    height: 100vh;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.name{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.nav-item{
+    margin-top: 30px;
+}
+
+main{
+    margin-left: 15rem;
+    background-color: #212529;
+}
