@@ -1,29 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Century Gothic', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
 
-body{
+body {
     background-color: #212529;
 }
 
-.dp img{
-    width: 160px;
+.dp img {
+    width: 160px, 0px;
     height: 160px;
     border: 7px solid #333941;
     border-radius: 50%;
 }
 
-.nav{
+.nav {
     background-color: #111418;
     position: fixed;
     width: 15rem;
     height: 100vh;
 }
 
-.navbar{
+.navbar {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -32,11 +32,19 @@ body{
     margin-top: 40px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.name{
+.nav-item:hover {
+    background-color: #d800fa;
+    background-clip: text;
+    background-image: linear-gradient(#411efa, #d800fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-name {
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -44,11 +52,67 @@ a{
     font-weight: bolder;
 }
 
-.nav-item{
+.nav-item {
     margin-top: 30px;
 }
 
-main{
+.social-nav {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    list-style: none;
+}
+
+.social-nav img {
+    width: 25px;
+}
+
+.social-nav li {
+    margin-top: 45px;
+    margin-left: 8px;
+}
+
+main {
     margin-left: 15rem;
     background-color: #212529;
+}
+
+.home {
+    height: 100vh;
+    background: url(./Resources./bg-home.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #d800fa;
+}
+
+.home button {
+    color: #d800fa;
+    background-color: transparent;
+    font-size: large;
+    font-weight: bold;
+    border: 3px solid #d800fa;
+    border-radius: 25px;
+    height: 50px;
+    width: 140px;
+    transition: all 0.5s ease-out;
+}
+
+.home h2{
+    font-size: 25px;
+}
+
+.name{
+    font-size: 50px;
+}
+
+.home h1, h2, button{
+    margin: 20px;
 }
