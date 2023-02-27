@@ -5,12 +5,14 @@
     color: white;
 }
 
-body {
-    background-color: #212529;
+.centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .dp img {
-    width: 160px, 0px;
+    width: 160px;
     height: 160px;
     border: 7px solid #333941;
     border-radius: 50%;
@@ -19,16 +21,13 @@ body {
 .nav {
     background-color: #111418;
     position: fixed;
-    width: 15rem;
+    width: 16rem;
     height: 100vh;
 }
 
 .navbar {
     list-style: none;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 40px;
 }
 
@@ -36,24 +35,32 @@ a {
     text-decoration: none;
 }
 
-.nav-item:hover {
-    background-color: #d800fa;
-    background-clip: text;
-    background-image: linear-gradient(#411efa, #d800fa);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.nav-item a:hover {
+    color: #00d698;
 }
 
 .nav-name {
     margin-top: 10px;
     display: flex;
     justify-content: center;
-    font-size: larger;
+    font-size: x-large;
     font-weight: bolder;
 }
 
 .nav-item {
     margin-top: 30px;
+}
+
+.facebook:hover, .facebook:focus, .linkedin:hover, .linkedin:focus{
+    filter: invert(53%) sepia(79%) saturate(7496%) hue-rotate(198deg) brightness(103%) contrast(101%);
+}
+
+.instagram:hover, .instagram:focus{
+    filter: invert(44%) sepia(55%) saturate(2401%) hue-rotate(270deg) brightness(86%) contrast(107%);
+}
+
+.github:hover, .github:focus{
+    filter: invert(76%) sepia(17%) saturate(132%) hue-rotate(171deg) brightness(91%) contrast(86%);
 }
 
 .social-nav {
@@ -69,36 +76,32 @@ a {
 
 .social-nav li {
     margin-top: 45px;
-    margin-left: 8px;
+    margin-right: 8px;
 }
 
-main {
-    margin-left: 15rem;
-    background-color: #212529;
+.container {
+    margin-left: 16rem;
 }
 
 .home {
     height: 100vh;
     background: url(./Resources./bg-home.jpg) no-repeat;
     background-size: cover;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .home button:hover{
     cursor: pointer;
     color: white;
-    background-color: #d800fa;
+    background-color: #00d698;
 }
 
 .home button {
-    color: #d800fa;
+    color: #00d698;
     background-color: transparent;
     font-size: large;
     font-weight: bold;
-    border: 3px solid #d800fa;
+    border: 3px solid #00d698;
     border-radius: 25px;
     height: 50px;
     width: 140px;
@@ -116,3 +119,6 @@ main {
 .home h1, h2, button{
     margin: 20px;
 }
+
+
+
