@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+:root{
+    --color-scheme: #00d698;
+    --bg1: #26292d;
+    --bg2: #373c43;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Century Gothic', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
     color: white;
 }
 
@@ -28,7 +37,7 @@
 .navbar {
     list-style: none;
     flex-direction: column;
-    margin-top: 40px;
+    margin: 40px 0px;
 }
 
 a {
@@ -48,7 +57,7 @@ a {
 }
 
 .nav-item {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .facebook:hover, .facebook:focus, .linkedin:hover, .linkedin:focus{
@@ -71,29 +80,40 @@ a {
 }
 
 .social-nav img {
-    width: 25px;
+    width: 20px;
 }
 
 .social-nav li {
-    margin-top: 45px;
-    margin-right: 8px;
+    /* margin-top: 50px; */
+    margin-right: 15px;
 }
 
-.container {
+main {
     margin-left: 16rem;
+}
+
+.home-container{
+    background: url(./Resources./bg-home.jpg) no-repeat;
+    background-size: cover;
+}
+
+.bg1{
+    background-color: var(--bg1);
+}
+
+.bg2{
+    background-color: var(--bg2);
 }
 
 .home {
     height: 100vh;
-    background: url(./Resources./bg-home.jpg) no-repeat;
-    background-size: cover;
     flex-direction: column;
 }
 
 .home button:hover{
     cursor: pointer;
     color: white;
-    background-color: #00d698;
+    background-color: var(--color-scheme);
 }
 
 .home button {
@@ -101,7 +121,7 @@ a {
     background-color: transparent;
     font-size: large;
     font-weight: bold;
-    border: 3px solid #00d698;
+    border: 3px solid var(--color-scheme);
     border-radius: 25px;
     height: 50px;
     width: 140px;
@@ -120,5 +140,46 @@ a {
     margin: 20px;
 }
 
+.about{
+    background-color: var(--bg1);
+    height: 120vh;
+    width: 100%;
+}
 
+.section-title{
+    height: 200px;
+    width: 100%;
+    position: relative;
+    
+}
+
+.text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.inner{
+    font-size: 125px;
+    font-weight: 600;
+    opacity: 0.05;
+}
+
+.upper{
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 1;
+    top: 60px;
+}
+
+.underline{
+    display: block;
+    border-bottom: 3px solid var(--color-scheme);
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
