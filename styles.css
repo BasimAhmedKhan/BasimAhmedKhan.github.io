@@ -2,7 +2,7 @@
 
 :root{
     --color-scheme: #00d698;
-    --bg1: #26292d;
+    --bg1: #212529;
     --bg2: #373c43;
 }
 
@@ -12,6 +12,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: white;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 .centre{
@@ -32,6 +36,11 @@
     color: white;
 }
 
+.para{
+    line-height: 1.8;
+    margin-top: 1rem;
+}
+
 .dp img {
     width: 10rem;
     height: 10rem;
@@ -46,8 +55,11 @@
     height: 100vh;
 }
 
-.navbar {
+li{
     list-style: none;
+}
+
+.navbar {
     flex-direction: column;
     margin: 2.5rem 0rem;
 }
@@ -61,7 +73,7 @@ a {
 }
 
 .nav-name {
-    margin-top: 10px;
+    margin-top: 0.62rem;
     display: flex;
     justify-content: center;
     font-size: x-large;
@@ -69,7 +81,7 @@ a {
 }
 
 .nav-item {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .facebook:hover, .facebook:focus, .linkedin:hover, .linkedin:focus{
@@ -92,11 +104,11 @@ a {
 }
 
 .social-nav img {
-    width: 20px;
+    width: 1.25rem;
 }
 
 .social-nav li {
-    margin-right: 15px;
+    margin-right: 1rem;
 }
 
 main {
@@ -121,22 +133,22 @@ main {
     flex-direction: column;
 }
 
-.home button:hover{
-    cursor: pointer;
-    color: white;
-    background-color: var(--color-scheme);
-}
-
 .home button {
     color: var(--color-scheme);
     background-color: transparent;
     font-size: large;
     font-weight: bold;
-    border: 3px solid var(--color-scheme);
-    border-radius: 25px;
-    height: 50px;
-    width: 140px;
+    border: 0.2rem solid var(--color-scheme);
+    border-radius: 1.5rem;
+    height: 3.2rem;
+    width: 8.75rem;
     transition: all 0.5s ease-out;
+}
+
+.home button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: var(--color-scheme);
 }
 
 h2{
@@ -192,8 +204,56 @@ h2{
     margin-right: auto;
 }
 
-@media (max-width: 810px){
-    :root{
-        font-size: 11px;
-    }
+.intro-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro{
+    width: 66%;
+}
+
+.detail{
+    width: 30%;
+}
+
+.detail-list{
+    border-bottom: 0.1rem solid var(--bg2);
+    padding: 1rem 0rem;
+}
+
+.button{
+    background-color: var(--color-scheme);
+    font-size: large;
+    font-weight: bold;
+    border: 0.2rem solid var(--color-scheme);
+    border-radius: 1.5rem;
+    height: 3.2rem;
+    width: 12rem;
+    transition: all 0.5s ease-out;
+    margin-top: 2rem;
+}
+
+.button:hover{
+    opacity: 0.5;
+}
+
+.accomplishment{
+    display: flex;
+    justify-content: space-between;
+}
+
+.accomplishment-list{
+    width: 25%;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.accomplishment-list h2{
+    font-size: 3rem;
+}
+
+.l2, .l3{
+    border-left: 0.1rem solid var(--bg2);
+    border-right: 0.1rem solid var(--bg2);
 }
