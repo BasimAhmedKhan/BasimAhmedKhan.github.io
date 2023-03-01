@@ -169,6 +169,12 @@ h2{
     width: 100%;
 }
 
+.what-i-do{
+    background-color: var(--bg2);
+    height: 120vh;
+    width: 100%;
+}
+
 .section-title{
     height: 13rem;
     width: 100%;
@@ -205,6 +211,7 @@ h2{
 }
 
 .intro-container{
+    height: 50vh;
     display: flex;
     justify-content: space-between;
 }
@@ -239,6 +246,7 @@ h2{
 }
 
 .accomplishment{
+    height: 25vh;
     display: flex;
     justify-content: space-between;
 }
