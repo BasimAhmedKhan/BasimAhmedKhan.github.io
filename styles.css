@@ -249,12 +249,13 @@ h2{
     height: 25vh;
     display: flex;
     justify-content: space-between;
+    margin-top: 4rem;
 }
 
 .accomplishment-list{
     width: 25%;
+    height: 7rem;
     text-align: center;
-    margin-top: 4rem;
 }
 
 .accomplishment-list h2{
@@ -264,4 +265,27 @@ h2{
 .l2, .l3{
     border-left: 0.1rem solid var(--bg2);
     border-right: 0.1rem solid var(--bg2);
+}
+
+.services{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services-list{
+    display: flex;
+    width: 45%;
+    margin-top: 4rem;
+}
+
+.services-list .image{
+    height: 5rem;
+    width: 7rem;
+    background: var(--bg1);
+    border-radius: 15%;
+}
+
+.services-detail{
+    margin-left: 2rem;
 }
