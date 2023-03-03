@@ -133,6 +133,24 @@ main {
     flex-direction: column;
 }
 
+.about{
+    background-color: var(--bg1);
+    height: 120vh;
+    width: 100%;
+}
+
+.what-i-do{
+    background-color: var(--bg2);
+    height: 120vh;
+    width: 100%;
+}
+
+.resume{
+    background-color: var(--bg1);
+    height: 200vh;
+    width: 100%;
+}
+
 .home button {
     color: var(--color-scheme);
     background-color: transparent;
@@ -161,18 +179,6 @@ h2{
 
 .home > *{
     margin: 1rem;
-}
-
-.about{
-    background-color: var(--bg1);
-    height: 120vh;
-    width: 100%;
-}
-
-.what-i-do{
-    background-color: var(--bg2);
-    height: 120vh;
-    width: 100%;
 }
 
 .section-title{
@@ -286,6 +292,38 @@ h2{
     border-radius: 15%;
 }
 
+.services-list .image img{
+    width: 2.5rem;
+}
+
 .services-detail{
     margin-left: 2rem;
+}
+
+.resume-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tile{
+    height: 15rem;
+    width: 90%;
+    background-color: #111418;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tile > *{
+    margin: 1rem 0rem 0rem 1rem;
+}
+
+.yearbg{
+    width: 8rem;
+    height: 1.5rem;
+    background-color: var(--color-scheme);
+    border-radius: 0.25rem;
+    text-align: center;
 }
