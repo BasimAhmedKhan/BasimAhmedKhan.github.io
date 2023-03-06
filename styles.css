@@ -1,10 +1,16 @@
+/* Importing fonts  */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+/* Declaring variable  */
 
 :root{
     --color-scheme: #00d698;
     --bg1: #212529;
     --bg2: #373c43;
 }
+
+/* Reseting margin padding, and other values */
 
 * {
     margin: 0;
@@ -17,6 +23,8 @@
 html{
     scroll-behavior: smooth;
 }
+
+/* Declaring classes for later use  */
 
 .centre{
     display: flex;
@@ -41,6 +49,65 @@ html{
     margin-top: 1rem;
 }
 
+.bg1{
+    background-color: var(--bg1);
+}
+
+.bg2{
+    background-color: var(--bg2);
+}
+
+a {
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+main {
+    margin-left: 16rem;
+}
+
+/* Section Title Heading */
+
+.section-title{
+    height: 13rem;
+    width: 100%;
+    position: relative;
+    
+}
+
+.text{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.inner{
+    font-size: 8rem;
+    font-weight: 600;
+    opacity: 0.05;
+}
+
+.upper{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    z-index: 1;
+    top: 4rem;
+}
+
+.underline{
+    display: block;
+    border-bottom: 0.2rem solid var(--color-scheme);
+    width: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navbar */
+
 .dp img {
     width: 10rem;
     height: 10rem;
@@ -55,17 +122,9 @@ html{
     height: 100vh;
 }
 
-li{
-    list-style: none;
-}
-
 .navbar {
     flex-direction: column;
     margin: 2.5rem 0rem;
-}
-
-a {
-    text-decoration: none;
 }
 
 .nav-item a:hover, .color-scheme {
@@ -111,44 +170,16 @@ a {
     margin-right: 1rem;
 }
 
-main {
-    margin-left: 16rem;
-}
+/* Home Section */
 
 .home-container{
     background: url(./Resources./bg-home.jpg) no-repeat;
     background-size: cover;
 }
 
-.bg1{
-    background-color: var(--bg1);
-}
-
-.bg2{
-    background-color: var(--bg2);
-}
-
 .home {
     height: 100vh;
     flex-direction: column;
-}
-
-.about{
-    background-color: var(--bg1);
-    height: 120vh;
-    width: 100%;
-}
-
-.what-i-do{
-    background-color: var(--bg2);
-    height: 120vh;
-    width: 100%;
-}
-
-.resume{
-    background-color: var(--bg1);
-    height: 200vh;
-    width: 100%;
 }
 
 .home button {
@@ -181,39 +212,10 @@ h2{
     margin: 1rem;
 }
 
-.section-title{
-    height: 13rem;
+.about{
+    background-color: var(--bg1);
+    height: 120vh;
     width: 100%;
-    position: relative;
-    
-}
-
-.text{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-
-.inner{
-    font-size: 8rem;
-    font-weight: 600;
-    opacity: 0.05;
-}
-
-.upper{
-    font-size: 2.2rem;
-    font-weight: bolder;
-    z-index: 1;
-    top: 4rem;
-}
-
-.underline{
-    display: block;
-    border-bottom: 0.2rem solid var(--color-scheme);
-    width: 5rem;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .intro-container{
@@ -249,6 +251,14 @@ h2{
 
 .button:hover{
     opacity: 0.5;
+}
+
+/* What I Do Section */
+
+.what-i-do{
+    background-color: var(--bg2);
+    height: 120vh;
+    width: 100%;
 }
 
 .accomplishment{
@@ -300,6 +310,14 @@ h2{
     margin-left: 2rem;
 }
 
+/* Resume Section */
+
+.resume{
+    background-color: var(--bg1);
+    height: 200vh;
+    width: 100%;
+}
+
 .resume-container{
     display: flex;
     justify-content: space-between;
@@ -326,4 +344,13 @@ h2{
     background-color: var(--color-scheme);
     border-radius: 0.25rem;
     text-align: center;
+}
+
+
+/* Other */
+
+@media (max-width: 810px){
+    :root{
+        font-size: 10px;
+    }
 }
