@@ -318,17 +318,28 @@ h2{
     width: 100%;
 }
 
-.resume-container{
+.resume-container, .skill-list{
     display: flex;
-    justify-content: space-between;
+}
+
+.tile-container, .progress{
+    width: 50%;
+}
+
+.education{
+    margin-right: 1rem;
+}
+
+.experiance{
+    margin-left: 1rem;
 }
 
 .tile{
     height: 15rem;
-    width: 90%;
+    max-width: 100%;
     background-color: #111418;
-    border-radius: 1rem;
-    margin-top: 1rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -349,8 +360,8 @@ h2{
 
 /* Other */
 
-@media (max-width: 810px){
+/* @media (max-width: 810px){
     :root{
         font-size: 10px;
     }
-}
+} */
