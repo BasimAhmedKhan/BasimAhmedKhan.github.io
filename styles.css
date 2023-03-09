@@ -4,7 +4,7 @@
 
 /* Declaring variable  */
 
-:root{
+:root {
     --color-scheme: #00d698;
     --bg1: #212529;
     --bg2: #373c43;
@@ -20,40 +20,48 @@
     color: white;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 /* Declaring classes for later use  */
 
-.centre{
+.centre {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.margin{
+.margin {
     margin: 0rem 3rem;
 }
 
-.grey{
+.color-scheme{
+    color: var(--color-scheme);
+}
+
+.grey {
     color: #909294;
 }
 
-.white{
+.grey-icon {
+    filter: opacity(70%);
+}
+
+.white {
     color: white;
 }
 
-.para{
+.para {
     line-height: 1.8;
     margin-top: 1rem;
 }
 
-.bg1{
+.bg1 {
     background-color: var(--bg1);
 }
 
-.bg2{
+.bg2 {
     background-color: var(--bg2);
 }
 
@@ -61,44 +69,44 @@ a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
 main {
-    margin-left: 16rem;
+    margin-left: 5rem;
 }
 
 /* Section Title Heading */
 
-.section-title{
+.section-title {
     height: 13rem;
     width: 100%;
     position: relative;
-    
+
 }
 
-.text{
+.text {
     position: absolute;
     height: 100%;
     width: 100%;
     text-align: center;
 }
 
-.inner{
+.inner {
     font-size: 8rem;
     font-weight: 600;
     opacity: 0.05;
 }
 
-.upper{
+.upper {
     font-size: 2.2rem;
     font-weight: bolder;
     z-index: 1;
     top: 4rem;
 }
 
-.underline{
+.underline {
     display: block;
     border-bottom: 0.2rem solid var(--color-scheme);
     width: 5rem;
@@ -108,50 +116,86 @@ main {
 
 /* Navbar */
 
-.dp img {
-    width: 10rem;
-    height: 10rem;
-    border: 0.5rem solid #333941;
-    border-radius: 50%;
-}
-
 .nav {
-    background-color: #111418;
-    position: fixed;
-    width: 16rem;
+    width: 5rem;
     height: 100vh;
+    position: fixed;
+    background-color: #111418;;
+    transition: width 200ms ease;
 }
 
 .navbar {
-    flex-direction: column;
-    margin: 2.5rem 0rem;
-}
-
-.nav-item a:hover, .color-scheme {
-    color: var(--color-scheme);
-}
-
-.nav-name {
-    margin-top: 0.62rem;
     display: flex;
-    justify-content: center;
-    font-size: x-large;
-    font-weight: bolder;
+    flex-direction: column;
+    align-items: center;
+    height: 10%;
 }
 
 .nav-item {
-    margin-top: 1.25rem;
+    width: 100%;
 }
 
-.facebook:hover, .facebook:focus, .linkedin:hover, .linkedin:focus{
+.nav-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: #b6b6b6;
+    filter: grayscale(100%) opacity(0.7);
+    transition: 500ms;
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: #00d698;
+    color: #ececec;
+}
+
+.nav-link img {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.nav:hover {
+    width: 16rem;
+}
+
+.nav:hover .nav-text {
+    display: block;
+}
+
+.logo {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #ececec;
+    background: #141418;
+    font-size: 1.2rem;
+    letter-spacing: 0.2ch;
+    width: 100%;
+}
+
+.nav-name {
+    display: inline;
+    position: absolute;
+    left: -999px;
+    transition: 600ms;
+}
+
+.facebook:hover, .facebook:focus, .linkedin:focus, .linkedin:hover {
     filter: invert(53%) sepia(79%) saturate(7496%) hue-rotate(198deg) brightness(103%) contrast(101%);
 }
 
-.instagram:hover, .instagram:focus{
+.instagram:hover, .instagram:focus {
     filter: invert(44%) sepia(55%) saturate(2401%) hue-rotate(270deg) brightness(86%) contrast(107%);
 }
 
-.github:hover, .github:focus{
+.github:hover, .github:focus {
     filter: invert(76%) sepia(17%) saturate(132%) hue-rotate(171deg) brightness(91%) contrast(86%);
 }
 
@@ -160,6 +204,13 @@ main {
     justify-content: center;
     align-items: flex-end;
     list-style: none;
+}
+
+.social-nav a{
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: var(--bg1);
+    border-radius: 50%;
 }
 
 .social-nav img {
@@ -172,7 +223,7 @@ main {
 
 /* Home Section */
 
-.home-container{
+.home-container {
     background: url(./Resources./bg-home.jpg) no-repeat;
     background-size: cover;
 }
@@ -194,50 +245,63 @@ main {
     transition: all 0.5s ease-out;
 }
 
-.home button:hover{
+.home button:hover {
     cursor: pointer;
     color: white;
     background-color: var(--color-scheme);
 }
 
-h2{
+h2 {
     font-size: 1.75rem;
 }
 
-.name{
+.name {
     font-size: 4rem;
 }
 
-.home > *{
+.home>* {
     margin: 1rem;
 }
 
-.about{
+/* About Section  */
+
+.about {
     background-color: var(--bg1);
     height: 120vh;
     width: 100%;
 }
 
-.intro-container{
+.intro-container {
     height: 50vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.intro{
-    width: 66%;
+.intro {
+    width: 55%;
 }
 
-.detail{
-    width: 30%;
+.dp{
+    width: 20%;
 }
 
-.detail-list{
+.dp img{
+    height: 13rem;
+    width: 13rem;
+    border: 0.5rem solid #333941;
+    border-radius: 50%;
+}
+
+.detail {
+    width: 22%;
+}
+
+.detail-list {
     border-bottom: 0.1rem solid var(--bg2);
     padding: 1rem 0rem;
 }
 
-.button{
+.button {
     background-color: var(--color-scheme);
     font-size: large;
     font-weight: bold;
@@ -249,92 +313,95 @@ h2{
     margin-top: 2rem;
 }
 
-.button:hover{
+.button:hover {
     opacity: 0.5;
 }
 
 /* What I Do Section */
 
-.what-i-do{
+.what-i-do {
     background-color: var(--bg2);
     height: 120vh;
     width: 100%;
 }
 
-.accomplishment{
+.accomplishment {
     height: 25vh;
     display: flex;
     justify-content: space-between;
     margin-top: 4rem;
 }
 
-.accomplishment-list{
+.accomplishment-list {
     width: 25%;
     height: 7rem;
     text-align: center;
 }
 
-.accomplishment-list h2{
+.accomplishment-list h2 {
     font-size: 3rem;
 }
 
-.l2, .l3{
+.l2,
+.l3 {
     border-left: 0.1rem solid var(--bg2);
     border-right: 0.1rem solid var(--bg2);
 }
 
-.services{
+.services {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.services-list{
+.services-list {
     display: flex;
     width: 45%;
     margin-top: 4rem;
 }
 
-.services-list .image{
+.services-list .image {
     height: 5rem;
-    width: 7rem;
+    width: 6rem;
     background: var(--bg1);
     border-radius: 15%;
 }
 
-.services-list .image img{
+.services-list .image img {
     width: 2.5rem;
 }
 
-.services-detail{
+.services-detail {
     margin-left: 2rem;
 }
 
 /* Resume Section */
 
-.resume{
+.resume {
     background-color: var(--bg1);
     height: 200vh;
     width: 100%;
 }
 
-.resume-container, .skill-list{
+.resume-container,
+.skill-list {
     display: flex;
 }
 
-.tile-container, .progress{
+.tile-container,
+.progress {
     width: 50%;
 }
 
-.education{
+.education {
     margin-right: 1rem;
 }
 
-.experiance{
+.experiance {
     margin-left: 1rem;
 }
 
-.tile{
+.tile {
     height: 15rem;
     max-width: 100%;
     background-color: #111418;
@@ -345,11 +412,11 @@ h2{
     justify-content: center;
 }
 
-.tile > *{
+.tile>* {
     margin: 1rem 0rem 0rem 1rem;
 }
 
-.yearbg{
+.yearbg {
     width: 8rem;
     height: 1.5rem;
     background-color: var(--color-scheme);
