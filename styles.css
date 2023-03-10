@@ -149,16 +149,20 @@ main {
     transition: 500ms;
 }
 
+.nav-link img {
+    width: 2rem;
+    /* min-width: 2rem; */
+    margin: 0 1.5rem;
+}
+
+.logo img{
+    width: 2.5rem;
+}
+
 .nav-link:hover {
     filter: grayscale(0%) opacity(1);
     background: #00d698;
     color: #ececec;
-}
-
-.nav-link img {
-    width: 2rem;
-    min-width: 2rem;
-    margin: 0 1.5rem;
 }
 
 .nav:hover {
@@ -261,6 +265,15 @@ h2 {
 
 .home>* {
     margin: 1rem;
+}
+
+.arrow-down{
+    position: absolute;
+    bottom: 0;
+}
+
+.arrow-down img{
+    width: 3rem;
 }
 
 /* About Section  */
