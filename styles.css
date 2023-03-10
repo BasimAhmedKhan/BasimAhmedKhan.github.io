@@ -171,7 +171,7 @@ main {
 
 .logo {
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     text-align: center;
     color: #ececec;
     background: #141418;
@@ -214,7 +214,7 @@ main {
 }
 
 .social-nav img {
-    width: 1.25rem;
+    width: 1.5rem;
 }
 
 .social-nav li {
@@ -288,7 +288,7 @@ h2 {
 .dp img{
     height: 13rem;
     width: 13rem;
-    border: 0.5rem solid #333941;
+    border: 0.5rem solid var(--bg2);
     border-radius: 50%;
 }
 
@@ -308,7 +308,7 @@ h2 {
     border: 0.2rem solid var(--color-scheme);
     border-radius: 1.5rem;
     height: 3.2rem;
-    width: 12rem;
+    width: 14rem;
     transition: all 0.5s ease-out;
     margin-top: 2rem;
 }
@@ -350,7 +350,7 @@ h2 {
 
 .services {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -379,7 +379,7 @@ h2 {
 
 .resume {
     background-color: var(--bg1);
-    height: 200vh;
+    height: 240vh;
     width: 100%;
 }
 
@@ -388,17 +388,16 @@ h2 {
     display: flex;
 }
 
-.tile-container,
-.progress {
+.tile-container{
     width: 50%;
 }
 
 .education {
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 .experiance {
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .tile {
@@ -406,10 +405,13 @@ h2 {
     max-width: 100%;
     background-color: #111418;
     border-radius: 0.5rem;
-    margin: 1.5rem 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.tile-margin{
+    margin: 1.5rem 0rem;
 }
 
 .tile>* {
@@ -424,11 +426,41 @@ h2 {
     text-align: center;
 }
 
+.progressbar{
+    height: 0.6rem;
+    width: 100%;
+    background-color: #111418;
+    border-radius: 2rem;
+}
+
+.bar{
+    height: 100%;
+    background-color: aqua;
+    border-radius: 2rem;
+}
+
+.skill-list img{
+    width: 2rem;
+}
+
+.skill-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+
+/* Testimonial Section */
+
+.portfolio{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--bg2);
+}
 
 /* Other */
 
-/* @media (max-width: 810px){
+@media (max-width: 1200px){
     :root{
-        font-size: 10px;
+        font-size: 12px;
     }
-} */
+}
