@@ -546,6 +546,10 @@ textarea{
     height: 12rem;
 }
 
+form > *{
+    font-size: 1.1rem;
+}
+
 /* Footer */
 
 .footer{
