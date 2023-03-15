@@ -8,6 +8,7 @@
     --color-scheme: #00d698;
     --bg1: #212529;
     --bg2: #373c43;
+    --dark: #111418;
 }
 
 /* Reseting margin padding, and other values */
@@ -34,6 +35,10 @@ html {
 
 .margin {
     margin: 0rem 3rem;
+}
+
+.margin-bottom{
+    margin-bottom: 5rem;
 }
 
 .color-scheme{
@@ -120,8 +125,9 @@ main {
     width: 5rem;
     height: 100vh;
     position: fixed;
-    background-color: #111418;;
+    background-color: var(--dark);
     transition: width 200ms ease;
+    z-index: 1;
 }
 
 .navbar {
@@ -155,7 +161,7 @@ main {
     margin: 0 1.5rem;
 }
 
-.logo img{
+.logo-img img{
     width: 2.5rem;
 }
 
@@ -178,7 +184,7 @@ main {
     margin-bottom: 0rem;
     text-align: center;
     color: #ececec;
-    background: #141418;
+    /* background: #141418; */
     font-size: 1.2rem;
     letter-spacing: 0.2ch;
     width: 100%;
@@ -210,7 +216,7 @@ main {
     list-style: none;
 }
 
-.social-nav a{
+.social-nav-icon{
     height: 2.5rem;
     width: 2.5rem;
     background-color: var(--bg1);
@@ -280,7 +286,7 @@ h2 {
 
 .about {
     background-color: var(--bg1);
-    height: 120vh;
+    /* height: 120vh; */
     width: 100%;
 }
 
@@ -316,14 +322,14 @@ h2 {
 
 .button {
     background-color: var(--color-scheme);
-    font-size: large;
+    font-size: 1.1rem;
     font-weight: bold;
     border: 0.2rem solid var(--color-scheme);
     border-radius: 1.5rem;
     height: 3.2rem;
     width: 14rem;
     transition: all 0.5s ease-out;
-    margin-top: 2rem;
+    margin: 2rem 0rem;
 }
 
 .button:hover {
@@ -357,7 +363,7 @@ h2 {
 
 .what-i-do {
     background-color: var(--bg2);
-    height: 120vh;
+    /* height: 120vh; */
     width: 100%;
 }
 
@@ -392,7 +398,8 @@ h2 {
 
 .resume {
     background-color: var(--bg1);
-    height: 250vh;
+    /* height: 250vh; */
+    display: block;
     width: 100%;
 }
 
@@ -416,7 +423,7 @@ h2 {
 .tile {
     height: 15rem;
     max-width: 100%;
-    background-color: #111418;
+    background-color: var(--dark);
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -427,8 +434,8 @@ h2 {
     margin: 1.5rem 0rem;
 }
 
-.tile>* {
-    margin: 1rem 0rem 0rem 1rem;
+.tile>*, .project>* {
+    margin: 1rem 1rem 0rem 1rem;
 }
 
 .yearbg {
@@ -464,13 +471,100 @@ h2 {
 
 /* Testimonial Section */
 
-.portfolio{
-    height: 100vh;
+/* .portfolio{
+    height: 200vh;
+    display: block;
     width: 100%;
     background-color: var(--bg2);
+} */
+
+.mywork{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
+.project-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 
+.project{
+    height: 26rem;
+    width: 50%;
+    max-width: 100%;
+    background-color: var(--dark);
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.project-btn-container{
+    display: flex;
+    align-items: center;
+}
+
+.project-button{
+    height: 2.5rem;
+    width: 8rem;
+    margin-top: 0rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+}
+
+iframe{
+    height: 20rem;
+    width: 50%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    position: relative;
+    top: 1.5rem;
+}
+
+/* Contact Section */
+
+.contact{
+    width: 100%;
+    height: 30rem;
+}
+
+input, textarea{
+    background-color: var(--bg2);
+    border: 0.5rem solid var(--bg2);
+    border-radius: 0.5rem;
+}
+
+input{
+    height: 3rem;
+    width: 49%;
+    margin-bottom: 1rem;
+}
+
+textarea{
+    width: 100%;
+}
+
+/* Footer */
+
+footer{
+    background-color: var(--dark);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer>*{
+    margin: 1rem 0rem;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+}
 
 /* Other */
 
