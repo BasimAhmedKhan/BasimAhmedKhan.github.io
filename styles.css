@@ -548,10 +548,6 @@ textarea{
 
 /* Footer */
 
-footer{
-    background-color: var(--dark);
-}
-
 .footer{
     display: flex;
     justify-content: space-between;
