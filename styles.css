@@ -291,7 +291,7 @@ h2 {
 }
 
 .intro-container {
-    height: 50vh;
+    height: 21rem;
     display: flex;
     justify-content: space-around;
 }
