@@ -47,9 +47,43 @@ iframe{
 
 @media only screen and (min-width: 300px) {
     :root{
-        font-size: 8px;
+        font-size: 9px;
     }
     .name{
         font-size: 3rem;
     }
+    .inner{
+        font-size: 6rem;
+    }
+    .upper{
+        top: 2.5rem;
+    }
 }
+
+@media only screen and (min-width: 400px) {
+    :root{
+        font-size: 11px;
+    }
+    .name{
+        font-size: 2.8rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    :root{
+        font-size: 12px;
+    }
+    .name{
+        font-size: 4rem;
+    }
+    .margin{
+        margin: 0rem 8rem;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    :root{
+        font-size: 14px;
+    }
+}
+

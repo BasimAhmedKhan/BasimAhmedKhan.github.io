@@ -145,7 +145,7 @@ main {
 }
 
 .social-nav-icon img {
-    width: 1.5rem;
+    width: 2rem;
 }
 
 .social-nav li {
@@ -491,12 +491,4 @@ form > *{
 .footer-logo{
     display: flex;
     align-items: center;
-}
-
-/* Other */
-
-@media (max-width: 1300px) {
-    :root{
-        font-size: 14px;
-    }
 }
