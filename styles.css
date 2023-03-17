@@ -88,7 +88,6 @@ main {
     height: 13rem;
     width: 100%;
     position: relative;
-
 }
 
 .text {
@@ -119,84 +118,6 @@ main {
     margin-right: auto;
 }
 
-/* Navbar */
-
-.nav {
-    width: 5rem;
-    height: 100vh;
-    position: fixed;
-    background-color: var(--dark);
-    transition: width 200ms ease;
-    z-index: 1;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 10%;
-}
-
-.nav-item {
-    width: 100%;
-}
-
-.nav-text {
-    display: none;
-    margin-left: 1rem;
-}
-
-.nav-link {
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    color: #b6b6b6;
-    filter: grayscale(100%) opacity(0.7);
-    transition: 500ms;
-}
-
-.nav-link img {
-    width: 2rem;
-    /* min-width: 2rem; */
-    margin: 0 1.5rem;
-}
-
-.logo-img img{
-    width: 2.5rem;
-}
-
-.nav-link:hover {
-    filter: grayscale(0%) opacity(1);
-    background: #00d698;
-    color: #ececec;
-}
-
-.nav:hover {
-    width: 16rem;
-}
-
-.nav:hover .nav-text {
-    display: block;
-}
-
-.logo {
-    font-weight: bold;
-    margin-bottom: 0rem;
-    text-align: center;
-    color: #ececec;
-    /* background: #141418; */
-    font-size: 1.2rem;
-    letter-spacing: 0.2ch;
-    width: 100%;
-}
-
-.nav-name {
-    display: inline;
-    position: absolute;
-    left: -999px;
-    transition: 600ms;
-}
-
 .facebook:hover, .facebook:focus, .linkedin:focus, .linkedin:hover {
     filter: invert(53%) sepia(79%) saturate(7496%) hue-rotate(198deg) brightness(103%) contrast(101%);
 }
@@ -223,7 +144,7 @@ main {
     border-radius: 50%;
 }
 
-.social-nav img {
+.social-nav-icon img {
     width: 1.5rem;
 }
 
@@ -246,7 +167,7 @@ main {
 .home button {
     color: var(--color-scheme);
     background-color: transparent;
-    font-size: large;
+    font-size: 1.1rem;
     font-weight: bold;
     border: 0.2rem solid var(--color-scheme);
     border-radius: 1.5rem;
@@ -381,7 +302,7 @@ h2 {
 
 .services-list .image {
     height: 5rem;
-    width: 6rem;
+    width: 5rem;
     background: var(--bg1);
     border-radius: 15%;
 }
@@ -434,7 +355,7 @@ h2 {
     margin: 1.5rem 0rem;
 }
 
-.tile>*, .project>* {
+.tile>*, .contact>*{
     margin: 1rem 1rem 0rem 1rem;
 }
 
@@ -487,18 +408,23 @@ h2 {
 .project-container{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .project{
     height: 26rem;
-    width: 50%;
+    width: 60%;
     max-width: 100%;
     background-color: var(--dark);
     border-radius: 0.6rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-left: 6rem;
+}
+
+.project-margin>*{
+    margin: 1rem 8rem 0rem 1rem;
 }
 
 .project-btn-container{
@@ -516,10 +442,10 @@ h2 {
 iframe{
     height: 20rem;
     width: 50%;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    border-radius: 0.8rem;
     position: relative;
     top: 1.5rem;
+    right: 6rem;
 }
 
 /* Contact Section */
@@ -527,6 +453,7 @@ iframe{
 .contact{
     width: 100%;
     height: 30rem;
+    margin-left: 0rem;
 }
 
 input, textarea{
@@ -568,8 +495,8 @@ form > *{
 
 /* Other */
 
-@media (max-width: 1200px){
+@media (max-width: 1300px) {
     :root{
-        font-size: 12px;
+        font-size: 14px;
     }
 }
