@@ -36,7 +36,6 @@
 
 .nav-link img {
     width: 2rem;
-    /* min-width: 2rem; */
     margin: 0 1.5rem;
 }
 
@@ -63,7 +62,6 @@
     margin-bottom: 0rem;
     text-align: center;
     color: #ececec;
-    /* background: #141418; */
     font-size: 1.2rem;
     letter-spacing: 0.2ch;
     width: 100%;

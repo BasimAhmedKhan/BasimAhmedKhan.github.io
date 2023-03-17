@@ -1,89 +1,139 @@
-.logo-img img{
+/* Hamburger Navbar */
+
+/* .navbar{
+    display: none;
+} */
+
+.nav {
+    height: 5rem;
+    width: 100vw;
+    position: fixed;
+    background-color: var(--dark);
+    transition: width 200ms ease;
+    z-index: 2;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+}
+
+.logo {
+    font-weight: bold;
+    margin-bottom: 0rem;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.2ch;
+}
+
+.nav-link img {
+    width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.logo-img img {
     width: 2.5rem;
 }
 
-.navbar{
+.nav-item{
     display: none;
 }
 
-main{
+/* For Mobile view */
+
+main {
     margin-left: 0rem;
     margin-top: 5rem;
 }
 
-/* .margin{
-    margin: 0rem 10rem;
-} */
-
-.row{
+.row {
     height: auto;
     flex-direction: column;
     align-items: center;
 }
 
-.row > *{
+.row>* {
     width: 100%;
 }
 
-.intro-container > *{
+.intro-container>* {
     margin: 1rem 0rem;
 }
 
-.education, .experiance{
+.education,
+.experiance {
     margin: 0rem 0rem;
 }
 
-.project{
+.project {
     margin-left: 0rem;
 }
 
-.project-margin > *{
+.project-margin>* {
     margin: 1rem 1rem 0rem 1rem;
 }
 
-iframe{
+iframe {
     position: static;
 }
 
+@media only screen and (max-width: 300px) {
+    :root {
+        font-size: 6px;
+    }
+}
+
 @media only screen and (min-width: 300px) {
-    :root{
+    :root {
         font-size: 9px;
     }
-    .name{
+
+    .name {
         font-size: 3rem;
     }
-    .inner{
+
+    .inner {
         font-size: 6rem;
     }
-    .upper{
+
+    .upper {
         top: 2.5rem;
     }
 }
 
 @media only screen and (min-width: 400px) {
-    :root{
+    :root {
         font-size: 11px;
     }
-    .name{
+
+    .name {
         font-size: 2.8rem;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    :root{
+    :root {
         font-size: 12px;
     }
-    .name{
+
+    .name {
         font-size: 4rem;
     }
-    .margin{
+
+    .margin {
         margin: 0rem 8rem;
     }
 }
 
 @media only screen and (min-width: 850px) {
-    :root{
+    :root {
         font-size: 14px;
     }
 }
-
