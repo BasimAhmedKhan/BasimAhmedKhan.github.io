@@ -251,6 +251,7 @@ h2 {
     width: 14rem;
     transition: all 0.5s ease-out;
     margin: 2rem 0rem;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -296,13 +297,14 @@ h2 {
 
 .services-list {
     display: flex;
-    width: 45%;
+    height: auto;
+    width: 48%;
     margin-top: 4rem;
 }
 
 .services-list .image {
     height: 5rem;
-    width: 6rem;
+    width: 15%;
     background: var(--bg1);
     border-radius: 15%;
 }
@@ -313,6 +315,8 @@ h2 {
 
 .services-detail {
     margin-left: 2rem;
+    height: auto;
+    width: 85%;
 }
 
 /* Resume Section */
