@@ -125,7 +125,7 @@ iframe {
         font-size: 14px;
     }
     .upper {
-        top: 3rem;
+        top: 4rem;
     }
 }
 
@@ -133,25 +133,16 @@ iframe {
     :root {
         font-size: 16px;
     }
-    .upper {
-        top: 3.5rem;
-    }
 }
 
 @media only screen and (min-width: 768px) {
     .margin {
         margin: 0rem 8rem;
     }
-    .upper {
-        top: 5rem;
-    }
 }
 
 @media only screen and (min-width: 850px) {
     :root {
         font-size: 15px;
-    }
-    .upper {
-        top: 6rem;
     }
 }
