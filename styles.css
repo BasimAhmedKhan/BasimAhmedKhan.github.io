@@ -89,14 +89,14 @@ main {
 /* Section Title Heading */
 
 .section-title {
-    height: 13rem;
+    height: 15rem;
     width: 100%;
     position: relative;
+    padding: 2rem 0rem;
 }
 
 .text {
     position: absolute;
-    height: 100%;
     width: 100%;
     text-align: center;
 }
@@ -111,7 +111,7 @@ main {
     font-size: 2.2rem;
     font-weight: bolder;
     z-index: 1;
-    top: 4.5rem;
+    top: 6.5rem;
 }
 
 .underline {
@@ -460,7 +460,7 @@ iframe{
 
 .contact{
     width: 100%;
-    height: 30rem;
+    height: 34rem;
     margin-left: 0rem;
 }
 
