@@ -63,6 +63,10 @@ main {
     width: 100%;
 }
 
+.margin{
+    margin: 0rem 1rem;
+}
+
 .intro-container>* {
     margin: 1rem 0rem;
 }
@@ -80,60 +84,60 @@ main {
     margin: 1rem 1rem 0rem 1rem;
 }
 
+.services-list .image{
+    width: 20%;
+}
+
+.services-detail{
+    width: 80%;
+}
+
+.footer > *{
+    font-size: 0.75rem;
+}
+
 iframe {
     position: static;
 }
 
 @media only screen and (max-width: 300px) {
     :root {
-        font-size: 7px;
+        font-size: 8px;
     }
 }
 
 @media only screen and (min-width: 300px) {
     :root {
-        font-size: 11px;
+        font-size: 14px;
     }
-
-    .name {
-        font-size: 3rem;
-    }
-
-    .inner {
-        font-size: 6rem;
-    }
-
     .upper {
-        top: 2.5rem;
+        top: 1rem;
     }
 }
 
 @media only screen and (min-width: 400px) {
     :root {
-        font-size: 12px;
+        font-size: 16px;
     }
-
-    .name {
-        font-size: 2.8rem;
+    .upper {
+        top: 1.5rem;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    :root {
-        font-size: 14px;
-    }
-
-    .name {
-        font-size: 4rem;
-    }
-
     .margin {
         margin: 0rem 8rem;
+    }
+    .upper {
+        top: 3rem;
     }
 }
 
 @media only screen and (min-width: 850px) {
     :root {
         font-size: 15px;
+    }
+    .upper {
+        top: 4rem;
     }
 }

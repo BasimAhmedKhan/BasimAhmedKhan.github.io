@@ -33,6 +33,10 @@ html {
     align-items: center;
 }
 
+.text-centre{
+    text-align: center;
+}
+
 .margin {
     margin: 0rem 3rem;
 }
@@ -98,7 +102,7 @@ main {
 }
 
 .inner {
-    font-size: 8rem;
+    font-size: calc(1.95rem + 8.4vw);
     font-weight: 600;
     opacity: 0.05;
 }
@@ -107,7 +111,7 @@ main {
     font-size: 2.2rem;
     font-weight: bolder;
     z-index: 1;
-    top: 4rem;
+    top: 4.5rem;
 }
 
 .underline {
@@ -187,7 +191,7 @@ h2 {
 }
 
 .name {
-    font-size: 4rem;
+    font-size: calc(1.525rem + 3.3vw);
 }
 
 .home>* {
