@@ -67,6 +67,10 @@ main {
     margin: 0rem 1rem;
 }
 
+.arrow-down{
+    margin-top: 5rem;
+}
+
 .intro-container>* {
     margin: 1rem 0rem;
 }
