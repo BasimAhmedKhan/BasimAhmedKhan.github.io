@@ -68,7 +68,12 @@ main {
 }
 
 .arrow-down{
+    position: relative;
     margin-top: 5rem;
+}
+
+.text{
+    padding-top: 1rem;
 }
 
 .intro-container>* {

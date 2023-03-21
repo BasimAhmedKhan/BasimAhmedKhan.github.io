@@ -199,7 +199,7 @@ h2 {
 }
 
 .arrow-down{
-    position: relative;
+    position: absolute;
     bottom: 0;
 }
 
