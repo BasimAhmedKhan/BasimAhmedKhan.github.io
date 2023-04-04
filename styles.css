@@ -197,8 +197,18 @@ h2 {
     font-size: 1.75rem;
 }
 
-.name {
+.home span{
     font-size: calc(1.525rem + 3.3vw);
+}
+
+.blink{
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity: 0;
+    }
 }
 
 .home>* {
