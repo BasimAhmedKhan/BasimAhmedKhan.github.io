@@ -1,22 +1,20 @@
 /* Hamburger Navbar */
 
-/* .navbar{
-    display: none;
-} */
-
 .nav {
     height: 5rem;
     width: 100vw;
+    align-items: center;
     position: fixed;
     background-color: var(--dark);
-    transition: width 200ms ease;
+    transition: all 300ms ease;
     z-index: 2;
     top: 0;
 }
 
 .navbar {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .nav-link {
@@ -44,6 +42,32 @@
 
 .nav-item {
     display: none;
+}
+
+.hamCollapse {
+    height: 35rem;
+}
+
+.hamburger {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    /* margin-right: 1.5rem; */
+    cursor: pointer;
+}
+
+.line {
+    height: 0.3rem;
+    width: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    margin: 0.2rem;
+}
+
+.display{
+    display: block;
 }
 
 /* For Mobile view */
