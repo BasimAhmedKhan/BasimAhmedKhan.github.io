@@ -199,6 +199,7 @@ h2 {
 
 .home span{
     font-size: calc(1.525rem + 3.3vw);
+    font-weight: 800;
 }
 
 .blink{
@@ -228,7 +229,6 @@ h2 {
 
 .about {
     background-color: var(--bg1);
-    /* height: 120vh; */
     width: 100%;
 }
 
@@ -306,7 +306,6 @@ h2 {
 
 .what-i-do {
     background-color: var(--bg2);
-    /* height: 120vh; */
     width: 100%;
 }
 
@@ -344,7 +343,6 @@ h2 {
 
 .resume {
     background-color: var(--bg1);
-    /* height: 250vh; */
     display: block;
     width: 100%;
 }
@@ -415,15 +413,6 @@ h2 {
     justify-content: space-between;
     margin-bottom: 0.8rem;
 }
-
-/* Testimonial Section */
-
-/* .portfolio{
-    height: 200vh;
-    display: block;
-    width: 100%;
-    background-color: var(--bg2);
-} */
 
 .mywork {
     display: flex;
