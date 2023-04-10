@@ -49,8 +49,5 @@ document.getElementById("hamburger").addEventListener("click", hameffect = () =>
     collapse.classList.toggle("hamCollapse");
     for(let i=0; i<navItem.length; i++){
         navItem[i].classList.toggle("display");
-        navItem[i].addEventListener("click", ()=> {
-            hameffect();
-        });
     }
 });
